@@ -26,7 +26,7 @@ const FormSplitBill = ({selectedFriend, onSplitBill}) => {
         <label>🧍‍♀️ Your expense</label>
         <input type="text" value={paidByUser} onChange={(e) => setPaidByUser(Number(e.target.value) > bill ? paidByUser : Number(e.target.value))} />
 
-        <label>👫 X's expense</label>
+        <label>👫 {selectedFriend.name}'s expense</label>
         <input type="text" value={paidByFriend} disabled />
 
         <label>🤑 Who is paying the bill</label>
